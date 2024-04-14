@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./dist/app.js",
-    "deploy-command": "nodemon ./dist/deploy-command.js",
+    "start": "node ./dist/app.js",
+    "deploy-command": "node ./dist/deploy-command.js",
     "build": "tsc"
   },
   "keywords": [],
