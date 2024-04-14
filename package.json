@@ -1,0 +1,35 @@
+{
+  "name": "zerox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./dist/app.js",
+    "deploy-command": "nodemon ./dist/deploy-command.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^1.7.1",
+    "@types/node": "^20.12.7",
+    "colors": "^1.4.0",
+    "discord-api-types": "^0.37.79",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "generate-password": "^1.7.1",
+    "hmtai": "^3.2.3",
+    "replicate": "^0.12.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^5.4.5"
+  }
+}
