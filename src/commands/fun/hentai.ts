@@ -37,7 +37,7 @@ export default {
 			const hmtai = new Hmtai()
 			const userID = interaction.user.id as string
 			const type = interaction.options.getString('type') as string
-			if (!ID.includes(userID)) return await interaction.editReply('Sorry you cannot use this command!')
+			if (!ID.includes(userID)) return await interaction.editReply('Sorry you cant use this command kiddo')
 
 			if (type == 'anal') {
 				await interaction.editReply(`|| ${await hmtai.nsfw.anal()} ||`)
