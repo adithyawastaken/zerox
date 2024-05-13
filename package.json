@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./dist/app.js",
+    ".": "nodemon ./dist/app.js",
+    "start": "node ./dist/app.js",
     "deploy-command": "nodemon ./dist/deploy-command.js",
     "build": "tsc"
   },
@@ -14,13 +15,14 @@
   "dependencies": {
     "@discordjs/rest": "^1.7.1",
     "@types/node": "^20.12.7",
+    "canvas": "^2.11.2",
     "colors": "^1.4.0",
     "discord-api-types": "^0.37.79",
     "discord.js": "^14.14.1",
     "dotenv": "^16.4.5",
     "generate-password": "^1.7.1",
     "hmtai": "^3.2.3",
-    "replicate": "^0.12.3"
+    "text-to-image": "^5.2.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.62.0",

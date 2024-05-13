@@ -11,12 +11,14 @@ export default {
 	async execute(interaction: ChatInputCommandInteraction) {
 		try {
 			await interaction.deferReply()
-			const req = await fetch('https://vinuxd.vercel.app/api/pickup')
+			const req = await fetch('https://rizzapi.vercel.app/random')
 			const res = await req.json()
-			await interaction.editReply(res.pickup)
+			const pickupLine = res.text
+			return await interaction.editReply(pickupLine)
 		}
 		catch (err) {
-			await interaction.editReply('Sorry... something went wrong!')
+			console.log(err)
+			return await interaction.editReply('Sorry... something went wrong!')
 		}
 	},
 }
