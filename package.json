@@ -4,14 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-<<<<<<< HEAD
     ".": "nodemon ./dist/app.js",
     "start": "node ./dist/app.js",
     "deploy-command": "nodemon ./dist/deploy-command.js",
-=======
-    "start": "node ./dist/app.js",
-    "deploy-command": "node ./dist/deploy-command.js",
->>>>>>> 9e6bfcce6116075490e1fb8e3a03a729475e57a7
+    "deploy-commands": "node ./dist/deploy-command.js",
     "build": "tsc"
   },
   "keywords": [],
