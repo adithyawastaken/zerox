@@ -33,11 +33,11 @@ export default {
 	async execute(interaction:ChatInputCommandInteraction) {
 		try {
 			await interaction.deferReply()
-			const ID = ['734357825161265223', '536596970236805143', '1063462476844380160', '769851017172746251', '952534533612400730', '933566329359839312', '758555283285999647', '827962935812948038']
+			const ID = ['1135848642780069959','734357825161265223', '536596970236805143', '1063462476844380160', '769851017172746251', '952534533612400730', '933566329359839312', '758555283285999647', '827962935812948038']
 			const hmtai = new Hmtai()
 			const userID = interaction.user.id as string
 			const type = interaction.options.getString('type') as string
-			if (!ID.includes(userID)) return await interaction.editReply('Sorry you cannot use this command!')
+			if (!ID.includes(userID)) return await interaction.editReply('Sorry you cant use this command kiddo')
 
 			if (type == 'anal') {
 				await interaction.editReply(`|| ${await hmtai.nsfw.anal()} ||`)
