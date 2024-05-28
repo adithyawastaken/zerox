@@ -1,16 +1,19 @@
 import { SlashCommandBuilder, ChatInputCommandInteraction } from 'discord.js';
 export default {
-	data: new SlashCommandBuilder()
-		.setName('word-search')
-		.setDescription('Gets the meaning of a word')
-		.setDMPermission(true)
-		.addStringOption(option => option
-			.setName('word')
-			.setDescription('The word to search')
-			.setRequired(true)
-			.setMaxLength(50)
-			.setMinLength(1),
-		),
+	data: {
+		...new SlashCommandBuilder()
+			.setName('word-search')
+			.setDescription('Gets the meaning of a word')
+			.setDMPermission(true)
+			.addStringOption(option => option
+				.setName('word')
+				.setDescription('The word to search')
+				.setRequired(true)
+				.setMaxLength(50)
+				.setMinLength(1)),
+		contexts: [0, 1, 2],
+		integration_types: [0, 1],
+	},
 	async execute(interaction: ChatInputCommandInteraction) {
 
 		const word = interaction.options.getString('word');
