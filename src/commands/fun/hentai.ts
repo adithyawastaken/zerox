@@ -26,6 +26,7 @@ export default {
 					{ name: 'pussy', value: 'pussy' },
 					{ name: 'uniform', value: 'uniform' },
 					{ name: 'gif', value: 'gif' },
+					{ name: 'slap', value: 'slap' },
 				)),
 		contexts: [0, 1, 2],
 		integration_types: [0, 1],
@@ -83,6 +84,13 @@ export default {
 			}
 			else if (type == 'creampie') {
 				await interaction.editReply(`|| ${await hmtai.nsfw.creampie()} ||`)
+			}
+			else if (type == 'slap') {
+				const req = await fetch('https://api.fluxpoint.dev/nsfw/gif/{imageType}')
+				const res = await req.json()
+				const file = res.file
+
+				await interaction.editReply(`||${file}||`)
 			}
 		}
 		catch (err) {
