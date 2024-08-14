@@ -1,2 +1,3 @@
 # zerox
 
+bot ok

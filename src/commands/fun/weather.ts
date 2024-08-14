@@ -9,6 +9,7 @@ export default {
 			.addStringOption(option => option
 				.setName('city')
 				.setDescription('The city you want the weather of')
+
 				.setRequired(true)),
 		contexts: [0, 1, 2],
 		integration_types: [0, 1],
