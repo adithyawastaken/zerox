@@ -88,9 +88,9 @@ export default {
 			else if (type == 'slap') {
 				const req = await fetch('https://api.fluxpoint.dev/nsfw/gif/{imageType}')
 				const res = await req.json()
-				const file = res.file
+				const gif = res.file
 
-				await interaction.editReply(`||${file}||`)
+				await interaction.editReply(`||${gif}||`)
 			}
 		}
 		catch (err) {
