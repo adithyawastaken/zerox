@@ -1,3 +1,3 @@
 # zerox
 
-bot ok
+fake niggas
